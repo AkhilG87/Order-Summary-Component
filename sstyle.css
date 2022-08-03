@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_img img {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+.container {
+  width: 420px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+}
+.text_content {
+  padding: 7%;
+  text-align: center;
+}
+.title {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+.sub_title {
+  color: #8a8a8a;
+  margin-bottom: 25px;
+}
+.pp_box {
+  background-color: hsl(225, 100%, 97%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+.pp_box_left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.pp_box_left div {
+  margin-left: 20px;
+}
+.pp_box_left div h5 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  font-size: 16px;
+}
+.pp_box_left div p {
+  color: #8a8a8a;
+}
+.pp_box a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.btn_pro {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.825rem;
+  margin: 1rem 0;
+  box-shadow: rgba(158, 193, 251, 0.25) 0px 54px 55px,
+    rgba(158, 193, 251, 0.12) 0px -12px 30px,
+    rgba(158, 193, 251, 0.12) 0px 4px 6px,
+    rgba(158, 193, 251, 0.17) 0px 12px 13px,
+    rgba(158, 193, 251, 0.09) 0px -3px 5px;
+}
+.cancel {
+  text-decoration: none;
+  font-weight: 700;
+  width: 100%;
+  color: #8a8a8a;
+}
+.btn_pro:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+.cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  transition: 0.3s ease;
+}
+.pp_box a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+  .body {
+    background-image: url('./images/pattern-background-mobile.svg');
+    font-size: 14px;
+  }
+  .title {
+    font-size: 23px;
+  }
+  .sub_title {
+    font-size: 14px;
+  }
+  .pp_box_left div {
+    margin-left: 5px;
+  }
+  .pp_box_left div h5 {
+    font-size: 14px;
+  }
+  .pp_box_left div p {
+    font-size: 13px;
+  }
+}
